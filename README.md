@@ -5,18 +5,18 @@
 ##### Clone the repository:
 ```bash
 $ git clone https://github.com/Sajjad2117/LLNY.git
-$ cd mysite
+$ cd fastapi
 ```
 ##### Create a virtualenv and activate it:
 * Windows:
 ```bash
-> py -3 -m venv venv
-> venv\Scripts\activate.bat
+> python -m venv env
+> .\env\Scripts\activate
 ```
 * Linux:
 ```bash
-$ python3 -m venv venv
-$ . venv/bin/activate
+$ python3 -m venv env
+$ . env/bin/activate
 ```
 ##### Install the requirements :
 ```bash
@@ -24,7 +24,7 @@ $ . venv/bin/activate
 ``` 
 ##### Run the development server:
 ```bash
-> python manage.py runserver
+> uvicorn main:app --reload
 ``` 
 ### Open http://127.0.0.1:8000/ in your browser. 
 
